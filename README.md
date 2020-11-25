@@ -26,6 +26,11 @@
   * system info
   ```bash
   lsb_release -a
+  yum remove php*
+  yum udpate
+  yum install php72w
+  systemctl restart httpd.service
+  
   cd /var/www/html
   ```
   

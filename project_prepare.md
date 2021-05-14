@@ -26,5 +26,6 @@ To avoid recursive query, maybe only allow one level ref? In this case, when the
 2. Another process to optimize the data structure by: find the common update among all patchse and create a new root leve tree as reference. 
 (Then, ref_treee would not have any biz meanning, it bacome a pure technical optimization measure. 
 Would the ref key in person level sufficent to perserv all the relations???)
+3. Also to find and merge those trees without ref but actually similar.
 
 the record of 009 is for remove node 3 while add node 18.

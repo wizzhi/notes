@@ -20,5 +20,5 @@ auto | varchar | varchar | id   | id   | id   | id   | \#   | date  | date
  007  | yyy   | uid   |   001    | `(1,2,5,6)`
  009  | zzz   | uid   |   001    | 
 
-The example of 007 means node 3 be removed while 5,6 be added.
-The record of 009 means soft link to 001, if it is a hard link, pid should be populted.
+* The example of 007 means node 3 is removed while 5,6 are added.
+* The record of 009 means soft link to 001, if it is a hard link, pid should be populted.

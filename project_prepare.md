@@ -17,8 +17,8 @@ auto | varchar | varchar | id   | id   | id   | id   | \#   | date  | date
  id   | name  | owner | ref_tree | pid
 ------|-------| ------|----------| -----
  001  | xxx   | uid   |          | `(1,2,3)`
- 007  | yyy   | uid   |   001    | `(1,0,3,5,6)`
+ 007  | yyy   | uid   |   001    | `(1,2,5,6)`
  009  | zzz   | uid   |   001    | 
 
-* The example of 007 means node 2 is removed while 5,6 are added.
-* The record of 009 means soft link to 001, if it is a hard link, pid should be populted.
+* pid is the node list of current tree.
+* empty list means direct copy of ref_tree, or nothing added if no ref_tree exists.

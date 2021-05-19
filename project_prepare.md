@@ -7,9 +7,9 @@ auto |       |          |       |         |       | city?     | date  | ref
 
 ## table of person
 
-pid  | name    | aka     | icon | ref  | dad  | mom  | rank | birth | death 
----- | ----    | --------| ---- | ---- | ---- | ---- | ---- | ----  | ----  
-auto | varchar | varchar | id   | id   | id   | id   | \#   | date  | date  
+pid  | name    | aka     | icon |   sex  | ref  | dad  | mom  | rank | birth | death 
+---- | ----    | --------| ---- |--------| ---- | ---- | ---- | ---- | ----  | ----  
+auto | varchar | varchar | id   | 0,1,2,9| id   | id   | id   | \#   | date  | date  
 
 
 ## table of tree

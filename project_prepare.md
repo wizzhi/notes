@@ -14,12 +14,15 @@ auto | nvarchar(70) | nvarchar(40) | id   | 0,1,2,9| id   | id   | id   | \#   |
 
 ## table of tree
 
- id   | name           | owner | ref_tree | pid
-------|----------------|-------|----------| -----
- auto | nvarchar(40)   | uid   |   id     | varchar(9999) - accommodate thousands of nodes.
- 001  | xxx            | uid   |          | `(1,2,3)`
- 007  | yyy            | uid   |   001    | `(1,2,5,6)`
- 009  | zzz            | uid   |   001    | 
+ id   | name           | owner | sine | type  | ref_tree
+------|----------------|-------|------|-------|----------
+ auto | nvarchar(40)   | uid   | date | v,    |   id
 
-* pid is the node list of current tree.
-* empty list means direct copy of ref_tree, or nothing added if no ref_tree exists.
+* if type == v, find node by ref_tree
+
+
+## table of tree - person relation
+
+tid | pid
+----|-----
+
